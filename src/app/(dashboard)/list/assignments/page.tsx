@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+// TypeScript type معرف صح
 type assignment = {
   id: number;
   subject: string;
@@ -14,6 +15,7 @@ type assignment = {
   dueDate: string;
 };
 
+// أعمدة الجدول
 const columns = [
   {
     header: "Subject Name",
@@ -40,7 +42,8 @@ const columns = [
 ];
 
 function assignmentsListPage() {
-  const renderRow = (item: assignments) => (
+  // هنا النوع صح: assignment
+  const renderRow = (item: assignment) => (
     <tr
       key={item.id}
       className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamapurplelight"
@@ -73,7 +76,7 @@ function assignmentsListPage() {
       {/* Top */}
       <div className="flex items-center justify-between">
         <h1 className="hidden md:block text-lg font-semibold">
-          All Assigments
+          All Assignments
         </h1>
         <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
           <TableSearch />
