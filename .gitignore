@@ -1,52 +1,24 @@
-# Prerequisites
-*.d
+# Node modules
+node_modules/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Next.js build output
+.next/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
 
-# Precompiled Headers
-*.gch
-*.pch
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Optional: coverage reports
+coverage/
